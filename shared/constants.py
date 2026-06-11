@@ -1,0 +1,105 @@
+"""Shared types and constants"""
+
+# User Roles
+ROLE_ADMIN = "admin"
+ROLE_MANAGER = "manager"
+ROLE_ENGINEER = "engineer"
+ROLE_OPERATOR = "operator"
+
+USER_ROLES = [ROLE_ADMIN, ROLE_MANAGER, ROLE_ENGINEER, ROLE_OPERATOR]
+
+# Defect Types
+DEFECT_TYPE_MISSING = "missing_component"
+DEFECT_TYPE_MISPLACED = "misplaced_component"
+DEFECT_TYPE_POLARITY = "polarity_issue"
+DEFECT_TYPE_SOLDER = "solder_defect"
+DEFECT_TYPE_ORIENTATION = "orientation_error"
+
+DEFECT_TYPES = [
+    DEFECT_TYPE_MISSING,
+    DEFECT_TYPE_MISPLACED,
+    DEFECT_TYPE_POLARITY,
+    DEFECT_TYPE_SOLDER,
+    DEFECT_TYPE_ORIENTATION,
+]
+
+# Severity Levels
+SEVERITY_LOW = "low"
+SEVERITY_MEDIUM = "medium"
+SEVERITY_HIGH = "high"
+SEVERITY_CRITICAL = "critical"
+
+SEVERITY_LEVELS = [SEVERITY_LOW, SEVERITY_MEDIUM, SEVERITY_HIGH, SEVERITY_CRITICAL]
+
+# Inspection Status
+STATUS_PENDING = "pending"
+STATUS_PROCESSING = "processing"
+STATUS_COMPLETED = "completed"
+STATUS_FAILED = "failed"
+
+INSPECTION_STATUSES = [STATUS_PENDING, STATUS_PROCESSING, STATUS_COMPLETED, STATUS_FAILED]
+
+# Component Types
+COMPONENTS = [
+    "resistor",
+    "capacitor",
+    "inductor",
+    "diode",
+    "led",
+    "transistor",
+    "ic",
+    "connector",
+]
+
+# Production Line Types
+LINE_TYPES = ["SMT", "THT", "Wave", "Hand", "Mixed"]
+
+# Agent Names
+AGENT_INSPECTOR = "inspector"
+AGENT_DIAGNOSIS = "diagnosis"
+AGENT_PREDICTION = "prediction"
+AGENT_REPORTING = "reporting"
+
+AGENTS = [AGENT_INSPECTOR, AGENT_DIAGNOSIS, AGENT_PREDICTION, AGENT_REPORTING]
+
+# Report Types
+REPORT_TYPE_INSPECTION = "inspection"
+REPORT_TYPE_QUALITY = "quality"
+REPORT_TYPE_FAILURE_ANALYSIS = "failure_analysis"
+
+REPORT_TYPES = [REPORT_TYPE_INSPECTION, REPORT_TYPE_QUALITY, REPORT_TYPE_FAILURE_ANALYSIS]
+
+# API Configuration
+API_VERSION = "v1"
+API_PREFIX = f"/api/{API_VERSION}"
+
+# Pagination
+DEFAULT_SKIP = 0
+DEFAULT_LIMIT = 10
+MAX_LIMIT = 100
+
+# File Upload
+MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+ALLOWED_EXTENSIONS = [".jpg", ".jpeg", ".png", ".bmp", ".tiff"]
+
+# AI Model Configuration
+YOLO_MODEL = "yolov8n"
+YOLO_CONFIDENCE_THRESHOLD = 0.5
+YOLO_IOU_THRESHOLD = 0.45
+
+# Quality Score Configuration
+MIN_QUALITY_SCORE = 0.0
+MAX_QUALITY_SCORE = 100.0
+DEFAULT_QUALITY_SCORE = 100.0
+
+# Risk Score Configuration
+MIN_RISK_SCORE = 0.0
+MAX_RISK_SCORE = 10.0
+
+# Error Codes
+ERROR_UNAUTHORIZED = "UNAUTHORIZED"
+ERROR_FORBIDDEN = "FORBIDDEN"
+ERROR_NOT_FOUND = "NOT_FOUND"
+ERROR_INVALID_INPUT = "INVALID_INPUT"
+ERROR_PROCESSING_FAILED = "PROCESSING_FAILED"
+ERROR_INTERNAL = "INTERNAL_SERVER_ERROR"

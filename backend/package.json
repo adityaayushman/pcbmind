@@ -1,0 +1,6 @@
+{
+  "name": "pcbmind-backend",
+  "version": "1.0.0",
+  "description": "PCBMind AI - FastAPI Backend for Manufacturing Intelligence",
+  "private": true
+}
