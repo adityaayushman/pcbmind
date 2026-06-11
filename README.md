@@ -143,7 +143,7 @@ This is an internal development project. Please follow the contribution guidelin
 
 ## 📞 Support
 
-For issues and questions, please contact the development team.
+For issues and questions, please contact the development team
 
 ## 📄 License
 
