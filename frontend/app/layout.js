@@ -4,16 +4,12 @@ import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "PCBMind AI - Manufacturing Intelligence",
   description: "AI-powered PCB defect detection and predictive analytics",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-brand-dark text-white`}>

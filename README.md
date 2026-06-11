@@ -30,7 +30,7 @@ PCBMind AI combines:
 
 ### Frontend
 - Next.js 15 (App Router)
-- React 19
+- React 18 (Stable)
 - TypeScript
 - Tailwind CSS
 - Framer Motion

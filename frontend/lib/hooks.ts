@@ -1,5 +1,3 @@
-"""React hooks for data fetching"""
-
 import { useState, useCallback } from "react";
 import { authAPI, inspectionAPI, dashboardAPI } from "./api";
 
